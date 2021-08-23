@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { InstantSearch, SearchBox, Hits, Highlight } from "react-instantsearch-dom";
+import { SearchBox, Hits, Highlight } from "react-instantsearch-dom";
 
 export const Container = styled.div`
   min-height: 100vh;
