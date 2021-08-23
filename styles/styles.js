@@ -5,11 +5,11 @@ export const Container = styled.div`
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  /* align-items:center; */
+  /* align-items: center; */
 `;
 
 export const Title = styled.h1`
-  color: ${(props) => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.secondary};
   text-align: center;
   font-size: 2.6rem;
 `;
@@ -29,7 +29,7 @@ export const CustomSearchBox = styled(SearchBox)`
     padding: 0 1.5rem;
     border-radius: 10px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
   }
   .ais-SearchBox-submit {
     height: 51px;
@@ -40,17 +40,17 @@ export const CustomSearchBox = styled(SearchBox)`
     transform: translateY(-50%);
     border-radius: 10px;
     border: 0;
-    background-color: ${(props) => props.theme.colors.red};
+    background-color: ${(props) => props.theme.colors.btnColor};
     font-size: 16px;
     font-weight: 600;
-    color: #fff;
+    color: ${(props) => props.theme.colors.secondary};
     cursor: pointer;
     &:after {
       content: "Search";
     }
     &:hover {
-      background-color: #ff0045;
-      color: #000;
+      background-color: ${(props) => props.theme.colors.btnHoverColor};
+      color: ${(props) => props.theme.colors.primary};
     }
   }
   .ais-SearchBox-submitIcon,
@@ -67,6 +67,7 @@ export const StyledHits = styled(Hits)`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    list-style-type: none;
   }
   .ais-Hits-item {
     margin: 10px 20px;
@@ -74,19 +75,19 @@ export const StyledHits = styled(Hits)`
 `;
 
 export const StyledHighlight = styled(Highlight)`
-  color: red;
+  color: ${(props) => props.theme.colors.secondary};
   .ais-Highlight-highlighted {
-    color: yellow;
+    color: ${(props) => props.theme.colors.highlightColor};
   }
 `;
 
 export const H3 = styled.h3`
-  color: green;
+  color: ${(props) => props.theme.colors.primary};
   span {
-    color: #fff;
+    color: ${(props) => props.theme.colors.secondary};
   }
 `;
 
 export const H4 = styled.h4`
-  color: green;
+  color: ${(props) => props.theme.colors.primary};
 `;
